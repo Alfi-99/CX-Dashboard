@@ -1,58 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <h1>🔴 Red CX Operational Dashboard</h1>
+  <p>Dashboard Operasional Berbasis Laravel untuk Monitoring KPI & Performa</p>
+</div>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 📖 Tentang Proyek
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Red CX Dashboard** adalah aplikasi *Operational Dashboard* tingkat enterprise yang dirancang khusus untuk memantau data operasional seperti metrik KPI, persebaran data geografis, pengelolaan SDM, dan catatan finansial perusahaan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Dashboard ini menggunakan tema visual **"Data-Heavy Precision"**, yang secara khusus dioptimalkan untuk menyajikan metrik KPI dalam jumlah masif dengan tingkat keterbacaan yang tinggi tanpa membingungkan penggunanya. Aplikasi ini memadukan estetika modern menggunakan palet warna khas *Red CX* (merah hingga ungu gelap), komponen kartu modular (*nested cards*), dan tata letak data yang bersih.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fungsionalitas & Modul Utama
 
-## Learning Laravel
+Aplikasi ini dibagi menjadi beberapa modul utama yang saling terkait untuk mendukung proses pengambilan keputusan dan pelaporan di tingkat manajemen:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **📊 Dashboard Utama (Dashboard)**
+  Menyajikan *helicopter view* atau ringkasan keseluruhan tentang operasional organisasi. Mencakup visualisasi data skala besar, tren *traffic*, dan performa jalur layanan *(distribution channel)* menggunakan bagan-bagan informatif dan tabel statistik dinamis.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **📈 Performance Mapping (Performance)**
+  Pemantauan detail metrik dan performa KPI. Modul ini digunakan untuk melacak target layanan, mengevaluasi pencapaian, dan menyoroti titik-titik krusial yang memerlukan atensi (seperti laporan Top/Bottom 5 performers).
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **📝 Berita Acara Penerimaan Pekerjaan (BAPP)**
+  Modul pengelolaan administrasi dan dokumentasi. Menampilkan ringkasan status berkas, kemajuan pengerjaan dokumen BAPP, dan rekapitulasi data persetujuan (approval) yang saling terhubung dengan bagian keuangan.
 
-## Agentic Development
+- **💰 Pengelolaan Finansial (Financial)**
+  Menampilkan ringkasan data anggaran, pengeluaran, serta pengelolaan *revenue* perusahaan. Terhubung erat dengan metrik laporan bulanan dan pemantauan pencapaian target profitabilitas.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+- **🧑‍🤝‍🧑 Sumber Daya Manusia (SDM)**
+  Modul untuk pengelolaan staf operasional. Berguna untuk memantau kapasitas ketersediaan *seat* agen, jadwal pergeseran *(shift)*, lokasi geografis (melalui representasi *Walkin-Grapari Interactive Map*), dan distribusi kinerja agen perseorangan.
 
-```bash
-composer require laravel/boost --dev
+## 🎨 Pendekatan Desain Enterprise
 
-php artisan boost:install
-```
+Proyek ini sangat mengedepankan estetika visual dan pengalaman pengguna profesional. Beberapa elemen spesifik diimplementasikan:
+- **Tabel Borderless:** Menggunakan pendekatan tabel tanpa garis antar-kolom (*clean table*) dipadu dengan gaya selang-seling (*zebra-striping*) untuk kerapatan data tinggi.
+- **Visual Mapping:** Memanfaatkan basis peta Indonesia (*SVG Map Base*) lengkap dengan *pin markers* berkoordinat untuk pemantauan operasi yang tersebar di multi-titik geografis.
+- **Smart AI Integration:** Asisten pintar bawaan (berbasis AI model *Deepseek*) untuk memberikan bantuan navigasi interaktif pada kompleksitas antarmuka dan laporan.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Untuk panduan mendalam mengenai desain, hierarki warna, *typography*, dan komponen-komponen yang mengaturnya, silakan merujuk pada:
+👉 **[Pedoman Desain (DESIGN.md)](DESIGN.md)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+*Dibuat eksklusif untuk kebutuhan operasional internal organisasi. Seluruh modul dan spesifikasi desain telah disesuaikan dengan standar korporasi Red CX.*
